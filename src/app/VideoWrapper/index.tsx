@@ -9,12 +9,7 @@ export default function VideoWrapper() {
 
   return (
     <div className={styles.container}>
-      <VideoPlayer
-        ref={videoRef}
-        src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4"
-        width={640}
-        height={360}
-      />
+      <VideoPlayer ref={videoRef} src="/sample.mp4" width={640} height={360} />
       <div className={styles.controls}>
         <button type="button" onClick={() => videoRef.current?.play()}>
           play
