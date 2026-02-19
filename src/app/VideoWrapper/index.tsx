@@ -1,11 +1,11 @@
 'use client';
 
 import { useRef } from 'react';
-import VideoPlayer from '../VideoPlayer';
+import VideoPlayer, { type VideoRef } from '../VideoPlayer';
 import styles from './index.module.css';
 
 export default function VideoWrapper() {
-  const videoRef = useRef<React.ElementRef<typeof VideoPlayer>>(null);
+  const videoRef = useRef<VideoRef>(null);
 
   return (
     <div className={styles.container}>
